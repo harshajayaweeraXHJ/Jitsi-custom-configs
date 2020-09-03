@@ -29,4 +29,5 @@ f.write(CLOSE_PAGE_CONTENT)
 f.close()
 
 
+print("Custom config update complete")
 
