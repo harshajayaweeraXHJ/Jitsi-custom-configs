@@ -12,7 +12,7 @@ WATERMARK_IMG_DATAURL = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABC
 def install(package):
     subprocess.check_call([sys.executable, "-m", "pip", "install", package])
 
-install("base64")
+install("pybase64")
 
 import base64 
 
