@@ -16,7 +16,7 @@ install("pybase64")
 
 import base64 
 
-png_recovered = base64.decodestring(WATERMARK_IMG_DATAURL)
+png_recovered = base64.decodestring(WATERMARK_IMG_DATAURL.encode())
 f = open(WATERMARK_IMG_PATH, "w")
 f.write(png_recovered)
 f.close()
