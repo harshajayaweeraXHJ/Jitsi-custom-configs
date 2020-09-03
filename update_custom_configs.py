@@ -1,7 +1,8 @@
 import subprocess
 import sys
 
-CLOSE_PAGE_PATH = "/usr/share/jitsi-meet/static/close3.html"
+CLOSE_PAGE_PATH1 = "/usr/share/jitsi-meet/static/close3.html"
+CLOSE_PAGE_PATH2 = "/usr/share/jitsi-meet/index.html"
 WATERMARK_IMG_PATH = "/usr/share/jitsi-meet/images/watermark.png"
 
 CLOSE_PAGE_CONTENT = """
@@ -24,7 +25,11 @@ f.close()
 
 
 
-f = open(CLOSE_PAGE_PATH, "w")
+f = open(CLOSE_PAGE_PATH1, "w")
+f.write(CLOSE_PAGE_CONTENT)
+f.close()
+
+f = open(CLOSE_PAGE_PATH2, "w")
 f.write(CLOSE_PAGE_CONTENT)
 f.close()
 
